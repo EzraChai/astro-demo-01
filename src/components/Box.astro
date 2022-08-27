@@ -1,0 +1,15 @@
+---
+    const {header,text} = Astro.props;
+---
+
+<div class="group rounded-md p-12 tracking-normal bg-zinc-800 hover:bg-black duration-300 transition-all">
+    <div class=" group-hover:-translate-y-3 transition-all duration-300 delay-[20]">
+        <div class="header text-xl text-gray-100 font-bold tracking-normal pb-4">
+            {header}
+        </div>
+        <div class="text text-base text-gray-300 font-normal">
+            {text}
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Box from '../components/Box.astro';
+
+const title = "Home"
+---
+<BaseLayout title={title}>
+<div class="mt-16 max-w-7xl mx-auto">
+		<div class="text-7xl font-bold text-center tracking-wide">
+		<h1>All in One <br>
+		Personal Portfolio for  <br>
+		<span class=" text-red-500">Developer.</span>
+		</h1>
+		<div class="my-20 mx-10 grid grid-cols-3 gap-10">
+			<Box header={"Fast Performance"} text={"Optimized for a smaller build size, faster dev compilation and dozens of other improvements."}/>
+			<Box header={"Perfect Responsive"} text={"Optimized for a smaller build size, faster dev compilation and dozens of other improvements."}/>
+			<Box header={"Fast & Friendly Support"} text={"Optimized for a smaller build size, faster dev compilation and dozens of other improvements."}/>
+		</div>
+	</div>
+</div>
+
+</BaseLayout>

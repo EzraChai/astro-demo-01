@@ -1,0 +1,24 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import "@fontsource/raleway/variable.css"
+
+const {title} = Astro.props;
+---
+
+<style>
+    body{
+        font-family: "Raleway", sans-serif;
+        background-color: rgb(28,29,30);
+        @apply text-white;
+    }
+</style>
+
+
+<html>
+  <head>
+    <BaseHead title={title} />
+  </head>
+  <body>
+    <slot /> <!-- your content is injected here -->
+  </body>
+</html>

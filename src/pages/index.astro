@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Box from '../components/Box.astro';
+import Container from '../components/Container.astro';
 
 const title = "Home"
 ---
@@ -9,7 +10,7 @@ const title = "Home"
 		<div class="text-7xl font-bold text-center tracking-wide">
 		<h1>All in One <br>
 		Personal Portfolio for  <br>
-		<span class=" text-red-500">Developer.</span>
+		<span class=" text-transparent bg-clip-text from-red-400  bg-gradient-to-r to-yellow-500">Developer.</span>
 		</h1>
 		<div class="my-20 mx-10 grid grid-cols-3 gap-10">
 			<Box header={"Fast Performance"} text={"Optimized for a smaller build size, faster dev compilation and dozens of other improvements."}/>
@@ -18,5 +19,14 @@ const title = "Home"
 		</div>
 	</div>
 </div>
+<div class="bg-black">
+	<div class="p-20 max-w-5xl mx-auto">
+		<div class="mt-20 text-gray-400 text-xl font-semibold">Benefits</div>
+		<div class="text-gray-50 text-7xl font-bold  leading-[4.9rem]">Your perfect <br/>website partner.</div>
+	</div>
+	<Container/>
+</div>
+
+
 
 </BaseLayout>
